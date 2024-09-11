@@ -1,0 +1,88 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f5f5f5;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.header h1 {
+	color: #000000;
+	font-weight: 400;
+}
+
+.header__span {
+	background: #000000;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+#language-select {
+	width: 300px;
+	padding: 10px;
+	background-color: white;
+	border: 1px solid #000000;
+	border-radius: 5px;
+}
+
+#state {
+	width: 300px;
+	min-height: 120px;
+	background-color: rgb(228, 225, 225);
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#retry-button {
+	width: 300px;
+	border-radius: 5px;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	background-color: red;
+	color: white;
+	opacity: 0.86;
+}
+#refresh-button {
+	width: 300px;
+	border-radius: 5px;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	background-color: black;
+	color: white;
+	opacity: 0.92;
+}
+
+@media (max-width: 768px) {
+	.flex {
+		gap: 6px;
+	}
+	.flex h1 {
+		font-size: 1.5rem;
+	}
+}
